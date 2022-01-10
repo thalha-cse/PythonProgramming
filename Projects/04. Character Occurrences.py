@@ -1,19 +1,14 @@
+# This project is about Character occurrences in a string or in any other paragraphs etc...
+# This project contains user defined function named as count_occurrences, for loop, if else statement and some variables
 
-# This project is about real time currency converter which converts your amount to any other currency amount
-# This project contains
-# 1. forex-python library which has many facilities like currencyrates, currencysymbol, currencyname, bitcoin price of all currencies etc
-# 2. from forex-python import CurrencyRates fuction
-# 3. after that some variables are used to store or to fetch etc.....
+def count_occurrences(a):
+    count = {}
+    for i in a:
+        if i in count:
+            count[i] += 1
+        else:
+            count[i] = 1
+    print(count)
 
-from forex_python.converter import CurrencyRates
-c = CurrencyRates()
-# input from the user for the amount
-amount = int(input("Enter the amount:- "))
-# from which currency
-from_currency = input("From Currency:- ").upper()
-# to which currency
-to_currency = input("To Currency:- ").upper()
-print(from_currency, 'To', to_currency, amount)
-# "convert" function converts the currency rate
-result = c.convert(from_currency, to_currency, amount)
-print(result)
+sentence = input("Enter the string:- ")
+count_occurrences(sentence)

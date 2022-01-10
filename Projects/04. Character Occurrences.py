@@ -1,6 +1,7 @@
 # This project is about Character occurrences in a string or in any other paragraphs etc...
 # This project contains user defined function named as count_occurrences, for loop, if else statement and some variables
 
+# "a" is formal parameter in below line
 def count_occurrences(a):
     count = {}
     for i in a:
@@ -11,4 +12,5 @@ def count_occurrences(a):
     print(count)
 
 sentence = input("Enter the string:- ")
+# 'sentence' is used as actual parameter in below line
 count_occurrences(sentence)

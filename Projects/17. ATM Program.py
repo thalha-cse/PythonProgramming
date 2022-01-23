@@ -1,3 +1,7 @@
+# This project is about creating a ATM Machine
+# This is very simple and easy, using classes, objects, if-else, try-except concepts are used.....
+# This project is for beginners who want to imporve their learning skills through python, this is for them!
+
 import random
 import sys
 
